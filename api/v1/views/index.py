@@ -13,9 +13,7 @@ def status():
 
 @app_views.route('/stats')
 def stats():
-    """
-    endpoint that retrieves the number of each objects by type
-    """
+    """endpoint that retrieves the number of each objects by type"""
     objects = {"amenities": storage.count("Amenity"),
                "cities": storage.count("City"),
                "places": storage.count("Place"),
